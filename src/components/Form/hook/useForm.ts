@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { notification } from 'antd';
 
 const useForm = () => {
 	const [form, setForm] = useState({
@@ -15,6 +16,10 @@ const useForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log({ form });
+		notification.success({
+			message: `Datos enviados!`,
+			placement: 'topRight'
+		})
 	};
 
 	return { form, handleField, handleSubmit }
