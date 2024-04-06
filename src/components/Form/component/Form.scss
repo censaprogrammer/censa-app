@@ -1,0 +1,31 @@
+.Form {
+	display: grid;
+	place-items: center;
+	max-width: 500px;
+	border: 1px solid #5e5757;
+	border-radius: 5px;
+	padding: 10px;
+	.field {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 5px;
+		.label {
+			box-sizing: border-box;
+			width: 80px;
+			font-size: 16px;
+		}
+		input {
+			width: 300px;
+			height: 20px;
+		}
+	}
+	.submit {
+		width: 100px;
+		color: wheat;
+		font-weight: 500;
+		border-radius: 5px;
+		border: none;
+		height: 30px;
+	}
+}
